@@ -43,13 +43,13 @@ var employee = {
             }
 
 
-            if(!(/^[a-zA-ZА-Яа-я]+$/.test(data[0]))) {
+            if(!(/^[a-zA-ZА-Яа-яа-щА-ЩЬьЮюЯяЇїІіЄєҐґ]+$/.test(data[0]))) {
                 return false;
-            }else if(!(/^[a-zA-ZА-Яа-я]+$/.test(data[1]))) {
+            }else if(!(/^[a-zA-ZА-Яа-яа-щА-ЩЬьЮюЯяЇїІіЄєҐґ]+$/.test(data[1]))) {
                 return false;
             }else if(!(/^[0-9]+$/.test(data[2]))) {
                 return false;
-            }else if(!(/^[a-zA-ZА-Яа-я]+$/.test(data[3]))) {
+            }else if(!(/^[a-zA-ZА-Яа-яа-щА-ЩЬьЮюЯяЇїІіЄєҐґ]+$/.test(data[3]))) {
                 return false;
             }
 
