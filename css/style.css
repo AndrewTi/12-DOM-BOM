@@ -1,0 +1,326 @@
+body, h1, h2, h3, h4, h5, h6, p{
+    margin: 0;
+    font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/*
+
+криворукі стилі відображення помилок
+
+*/
+
+#message {
+    min-width: 400px;
+    height: 70px;
+    position: absolute;
+    border-radius: 0 0 5px 5px;
+    top: -75px;
+    left: calc(50% - 200px);
+    background: #6E0000;
+    box-shadow: 0 0 7px 1px rgba(0, 0, 0, 0.5);
+    z-index: 6000;
+}
+
+#message span {
+    display: block;
+    text-align: center;
+    margin: 0 30px;
+    height: 70px;
+    line-height: 70px;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/*
+
+криворукі стилі вікна настройок:)
+
+*/
+
+
+#setting {
+    width: 100%;
+    height: 100%;
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5000;
+}
+
+#settingBackg {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#block_setting {
+    width: 400px;
+    height: 300px;
+    border-radius: 25px;
+    overflow: hidden;
+    position: absolute;
+    background: white;
+    top: calc(50% - 150px);
+    left: calc(50% - 200px);
+}
+
+#block_setting > span, #block_setting > input {
+    display: block;
+    margin: auto;
+}
+
+#block_setting > span {
+    width: 200px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 25px;
+}
+
+#block_setting > input {
+    background: white;
+    width: 50px;
+    height: 40px;
+    border-radius: 3px;
+    box-shadow: inset 0px 0px 4px 1px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    font-weight: 600;
+    color: #383838;
+    font-size: 18px;
+}
+
+#confirm-setting {
+    display: block;
+    width: 150px;
+    height: 50px;
+    background: #33B17A;
+    position: relative;
+    top: 30px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 0px 0px 5px 0.5px rgba(0, 0, 0, 0.2);
+    color: white;
+    margin: auto;
+}
+
+
+/*
+
+криворукі стилі модального вікна:)
+
+*/
+
+#modal {
+    width: 100%;
+    height: 100%;
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5000;
+}
+
+#modal_backg {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#modal_content {
+    width: 500px;
+    height: 275px;
+    overflow: hidden;
+    background: white;
+    border-radius: 5px;
+    position: absolute;
+    top: calc(50% - 135.7px);
+    left: calc(50% - 250px);
+}
+
+#modal_content h3 {
+    margin-top: 10px;
+    text-align: center;
+    color: #383838;
+}
+
+#form_add {
+    margin-top: 10px;
+    width: 100%;
+    height: calc(100% - 20px);
+}
+
+#text_modal {
+    height: 80px;
+}
+
+#text_modal > span {
+    text-align: center;
+    font-size: 20px;
+    line-height: 40px;
+    font-weight: 600;
+    color: #383838;
+    display: block;
+    margin-bottom: 10px;
+}
+
+#rulles {
+    margin: 0;
+    list-style: decimal;
+    text-align: center;
+    color: #666A73;
+    font-weight: bold;
+}
+
+#rulles li span {
+    color: #383838;
+}
+
+#form {
+    margin-top: 20px;
+    height: 100px;
+}
+
+#form input {
+    margin: auto;
+    display: block;
+    background: white;
+    width: 400px;
+    height: 40px;
+    border-radius: 3px;
+    box-shadow: inset 0px 0px 4px 1px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    font-weight: 600;
+    color: #383838;
+    font-size: 18px;
+
+}
+
+#form input:focus {
+    border: none;
+	outline:1px solid rgba(50, 85, 209, 0.5);;
+}
+
+#checkform {
+    width: 150px;
+    height: 35px;
+    display: block;
+    border-radius: 3px;
+    background: #33B17A;
+    margin: 10px auto;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+}
+
+#checkform:hover {
+    background: #3CD090;
+}
+
+
+/*
+
+стилі блоку співробітників
+
+*/
+
+#show_setting {
+    width: 120px;
+    height: 45px;
+    background: #33B17A;
+    box-shadow: 0px 0px 10px 0.5px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    margin: auto;
+    position: relative;
+    top: 7.5px;
+}
+
+#show_setting:hover {
+    cursor: pointer;
+    background: #3CD090;
+}
+
+#show_setting span {
+    display: block;
+    height: 100%;
+    line-height: 45px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+
+
+#salary {
+    width: 250px;
+    height: 70px;
+    background: #F7F7DE;
+    box-shadow: 0px 0px 10px 0.5px rgba(0, 0, 0, 0.2);
+    margin: 20px auto;
+
+}
+
+#salary span {
+    display: block;
+    height: 100%;
+    line-height: 70px;
+    text-align: center;
+    font-size: 18px;
+
+}
+
+
+
+#employee_block {
+    width: 500px;
+    max-height: 400px;
+    margin: 20px auto;
+    background: #F7F7DE;
+    overflow: auto;
+    box-shadow: 0px 0px 10px 0.5px rgba(0, 0, 0, 0.2);
+}
+
+
+#employeeList {
+    list-style: none;
+    display: block;
+}
+
+#employeeList li {
+    display: block;
+    height: 20px;
+    margin-top: 20px;
+}
+
+#employeeList li span {
+    width: 24%;
+    display: block;
+    float: left;
+    font-weight: bold;
+    color: #242424
+}
+
+
+
+#showMobal {
+    width: 50px;
+    height: 50px;
+    display: block;
+    background: #33B17A;
+    border-radius: 5px;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    margin: auto;
+}
+
+#showMobal:hover {
+    background: #3CD090;
+}
